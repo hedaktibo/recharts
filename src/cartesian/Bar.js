@@ -388,8 +388,7 @@ class Bar extends Component {
           {this.renderRectangles()}
         </Layer>
         {this.renderErrorBar()}
-        {(!isAnimationActive || isAnimationFinished) &&
-          LabelList.renderCallByParent(this.props, data)}
+        {LabelList.renderCallByParent(this.props, data)}
       </Layer>
     );
   }
